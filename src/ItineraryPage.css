@@ -1,0 +1,150 @@
+.itinerary-selection-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-position: center;
+}
+
+.selection-title {
+    font-family: var(--font-retro);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 0px white;
+}
+
+.selection-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.selection-card {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.destination-banner {
+    width: 100%;
+    border-radius: var(--border-radius-lg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color-deep-ocean-blue);
+    box-shadow: var(--shadow-card);
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem;
+}
+
+.banner-overlay h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    font-family: var(--font-retro);
+    text-shadow: 2px 2px 0px var(--color-deep-ocean-blue);
+}
+
+.banner-overlay p {
+    color: var(--color-sand-beige);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Rest of existing styles */
+.itinerary-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.itinerary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.itinerary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.itinerary-day .day-schedule {
+    margin-top: 1rem;
+}
+
+.itinerary-day h3 {
+    margin-bottom: 0.5rem;
+    border-bottom: 2px dashed var(--color-sand-beige);
+    padding-bottom: 0.5rem;
+}
+
+.day-schedule {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.day-schedule li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.day-schedule li::before {
+    content: "✦";
+    color: var(--color-sunset-orange);
+    font-size: 1rem;
+}
+
+.day-locked {
+    background-color: #f0f0f0;
+    color: #888;
+    border-style: dashed;
+}
+
+.day-unlocked {
+    border-color: var(--color-sunset-orange);
+    background-color: #fffaf5;
+}
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.locked-content {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check-in-btn {
+    margin-top: 1.5rem;
+    width: 100%;
+}

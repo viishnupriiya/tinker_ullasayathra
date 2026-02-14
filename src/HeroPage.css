@@ -1,0 +1,82 @@
+.hero-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 10;
+    max-width: 600px;
+    width: 100%;
+}
+
+.hero-title {
+    font-family: var(--font-retro);
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-deep-ocean-blue);
+    text-shadow: 2px 2px 0px var(--color-sunset-orange);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    color: var(--color-text-secondary);
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+}
+
+.hero-cta {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Decoration */
+.hero-decoration {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-decoration--1 {
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-sunset-orange);
+    opacity: 0.1;
+    top: -50px;
+    right: -50px;
+}
+
+.hero-decoration--2 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-deep-ocean-blue);
+    opacity: 0.1;
+    bottom: -100px;
+    left: -100px;
+}
